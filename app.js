@@ -32,7 +32,7 @@ const TRANSLATIONS = {
     btnSubmit: "Enviar Respuestas",
     btnSending: "Enviando respuestas...",
     successTitle: "¡Registro exitoso!",
-    successDesc: "Tu registro se ha completado con éxito.",
+    successDesc: "Tu registro se ha completado con éxito. Nuestro equipo se pondrá en contacto contigo pronto.",
     btnNew: "Registrar otra respuesta",
     footerCopyright: "© 2026 Indipris Travel. Todos los derechos reservados."
   },
@@ -60,7 +60,7 @@ const TRANSLATIONS = {
     btnSubmit: "Submit Registration",
     btnSending: "Submitting answers...",
     successTitle: "Registration Successful!",
-    successDesc: "Your registration has been completed successfully.",
+    successDesc: "Your registration has been completed successfully. Our team will contact you shortly.",
     btnNew: "Submit another response",
     footerCopyright: "© 2026 Indipris Travel. All rights reserved."
   },
@@ -88,7 +88,7 @@ const TRANSLATIONS = {
     btnSubmit: "Envoyer l'inscription",
     btnSending: "Envoi en cours...",
     successTitle: "Enregistrement réussi !",
-    successDesc: "Votre enregistrement a été effectué avec succès.",
+    successDesc: "Votre enregistrement a été effectué avec succès. Notre équipe vous contactera sous peu.",
     btnNew: "Enregistrer une autre réponse",
     footerCopyright: "© 2026 Indipris Travel. Tous droits réservés."
   },
@@ -116,7 +116,7 @@ const TRANSLATIONS = {
     btnSubmit: "Antworten absenden",
     btnSending: "Wird gesendet...",
     successTitle: "Erfolgreich registriert!",
-    successDesc: "Ihre Registrierung wurde erfolgreich abgeschlossen.",
+    successDesc: "Ihre Registrierung wurde erfolgreich abgeschlossen. Unser Team wird sich in Kürze mit Ihnen in Verbindung setzen.",
     btnNew: "Weitere Antwort erfassen",
     footerCopyright: "© 2026 Indipris Travel. Alle Rechte vorbehalten."
   },
@@ -144,7 +144,7 @@ const TRANSLATIONS = {
     btnSubmit: "提交登记信息",
     btnSending: "正在提交...",
     successTitle: "登记成功！",
-    successDesc: "您的信息已成功登记。",
+    successDesc: "您的信息已成功登记。我们的团队将尽快与您取得联系。",
     btnNew: "登记另一条信息",
     footerCopyright: "© 2026 Indipris Travel. 版权所有。"
   }
