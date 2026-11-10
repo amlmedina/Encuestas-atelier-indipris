@@ -25,8 +25,7 @@
         </a>
       </div>
       <div style="display: flex; gap: 8px; align-items: center;">
-        <span class="header-badge">Atelier 2026</span>
-        <button id="btnOpenConfigModal" class="btn btn-sm btn-secondary" title="Configurar webhook / URL de Google Apps Script">⚙️ Google Sheets</button>
+        <span class="header-badge">plastimagen 2026</span>
       </div>
     </div>
   </header>
@@ -37,7 +36,7 @@
     <section class="survey-hero">
       <div class="survey-hero-overlay"></div>
       <div class="survey-hero-content">
-        <span class="survey-badge">Atelier Indipris</span>
+        <span class="survey-badge">plastimagen 2026</span>
         <h1 class="survey-title">Registro para tarifas preferenciales</h1>
         <p class="survey-desc">
           Por favor completa la información para coordinar tu estancia y la asignación de habitaciones durante el evento.
@@ -49,14 +48,8 @@
     <div class="form-card" id="formWrapper">
       <form id="atelierSurveyForm" novalidate>
 
-        <!-- ID (Generado automáticamente o editable) -->
-        <div class="form-group">
-          <label for="idInput">ID de Registro <span class="label-hint">(Generado automáticamente)</span></label>
-          <div class="input-icon-wrapper">
-            <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
-            <input type="text" id="idInput" name="id" class="form-control" readonly style="background: #f0f0f0; cursor: not-allowed; font-weight: 600;">
-          </div>
-        </div>
+        <!-- ID (Oculto internamente para trazabilidad sin distraer al usuario) -->
+        <input type="hidden" id="idInput" name="id">
 
         <!-- Nombre Completo -->
         <div class="form-group">
@@ -175,9 +168,6 @@
   <footer class="ind-footer">
     <div class="ind-container">
       <p>© 2026 Indipris Travel. Todos los derechos reservados.</p>
-      <p style="margin-top: 4px; font-size: 0.75rem;">
-        Hoja vinculada: <a href="https://docs.google.com/spreadsheets/d/1SGcaLCDOzNhKG6Fz8AYjGW966bZM3slejphykXfL6oo/edit?gid=0#gid=0" target="_blank" rel="noopener" class="sheet-link">Google Sheets 1SGcaLCDOzNhKG...</a>
-      </p>
     </div>
   </footer>
 
