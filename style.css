@@ -118,6 +118,35 @@ body {
   text-transform: uppercase;
 }
 
+/* Selector de Idioma Flotante / Cabecera */
+.lang-selector-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  border: 1px solid var(--ind-border);
+  border-radius: 20px;
+  padding: 2px 8px;
+  gap: 4px;
+}
+
+.lang-icon {
+  width: 15px;
+  height: 15px;
+  color: #666;
+}
+
+.lang-select {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ind-dark);
+  cursor: pointer;
+  outline: none;
+  padding: 3px 0;
+}
+
 /* ================= Hero / Banner ================= */
 .survey-hero {
   background: linear-gradient(135deg, #2b323c 0%, #171b22 100%);

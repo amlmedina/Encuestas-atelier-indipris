@@ -25,6 +25,16 @@
         </a>
       </div>
       <div style="display: flex; gap: 8px; align-items: center;">
+        <div class="lang-selector-wrapper">
+          <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <select id="langSelect" class="lang-select" aria-label="Language selector">
+            <option value="es">🇪🇸 Español</option>
+            <option value="en">🇺🇸 English</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="zh">🇨🇳 中文</option>
+          </select>
+        </div>
         <span class="header-badge">plastimagen 2026</span>
       </div>
     </div>
@@ -36,9 +46,9 @@
     <section class="survey-hero">
       <div class="survey-hero-overlay"></div>
       <div class="survey-hero-content">
-        <span class="survey-badge">plastimagen 2026</span>
-        <h1 class="survey-title">Registro para tarifas preferenciales</h1>
-        <p class="survey-desc">
+        <span class="survey-badge" id="txtHeroBadge">plastimagen 2026</span>
+        <h1 class="survey-title" id="txtHeroTitle">Registro para tarifas preferenciales</h1>
+        <p class="survey-desc" id="txtHeroDesc">
           Por favor completa la información para coordinar tu estancia y la asignación de habitaciones durante el evento.
         </p>
       </div>
@@ -53,7 +63,7 @@
 
         <!-- Nombre Completo -->
         <div class="form-group">
-          <label for="nombreInput">Nombre Completo <span style="color: #dc2626;">*</span></label>
+          <label for="nombreInput" id="lblNombre">Nombre Completo <span style="color: #dc2626;">*</span></label>
           <div class="input-icon-wrapper">
             <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
             <input type="text" id="nombreInput" name="nombre" class="form-control" placeholder="Ej. Carlos Roberto del Ángel" required>
@@ -63,7 +73,7 @@
         <!-- Correo Electrónico & Teléfono en 2 columnas -->
         <div class="form-row">
           <div class="form-group flex-1">
-            <label for="correoInput">Correo Electrónico <span style="color: #dc2626;">*</span></label>
+            <label for="correoInput" id="lblCorreo">Correo Electrónico <span style="color: #dc2626;">*</span></label>
             <div class="input-icon-wrapper">
               <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               <input type="email" id="correoInput" name="correo" class="form-control" placeholder="correo@ejemplo.com" required>
@@ -71,7 +81,7 @@
           </div>
 
           <div class="form-group flex-1">
-            <label for="telefonoInput">Teléfono / WhatsApp <span style="color: #dc2626;">*</span></label>
+            <label for="telefonoInput" id="lblTelefono">Teléfono / WhatsApp <span style="color: #dc2626;">*</span></label>
             <div class="input-icon-wrapper">
               <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
               <input type="tel" id="telefonoInput" name="telefono" class="form-control" placeholder="+52 55 1234 5678" required>
@@ -81,31 +91,31 @@
 
         <!-- Empresa -->
         <div class="form-group">
-          <label for="empresaInput">Empresa / Organización <span style="color: #dc2626;">*</span></label>
+          <label for="empresaInput" id="lblEmpresa">Empresa / Organización <span style="color: #dc2626;">*</span></label>
           <div class="input-icon-wrapper">
             <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
-            <input type="text" id="empresaInput" name="empresa" class="form-control" placeholder="Ej. Atelier Gourmet / Particular" required>
+            <input type="text" id="empresaInput" name="empresa" class="form-control" placeholder="Ej. Plastimagen / Empresa" required>
           </div>
         </div>
 
         <!-- Cuántas habitaciones & Hotel en 2 columnas -->
         <div class="form-row">
           <div class="form-group flex-1">
-            <label for="recamarasInput">¿Cuántas habitaciones requieres? <span style="color: #dc2626;">*</span></label>
+            <label for="recamarasInput" id="lblHabitaciones">¿Cuántas habitaciones requieres? <span style="color: #dc2626;">*</span></label>
             <div class="input-icon-wrapper">
               <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v11m0-4h18m0-7v11M7 10h10M6 14v4m12-4v4"></path></svg>
               <select id="recamarasInput" name="recamaras" class="form-control" required>
-                <option value="" disabled selected>Selecciona una opción...</option>
-                <option value="1 habitación">1 habitación</option>
-                <option value="2 habitaciones">2 habitaciones</option>
-                <option value="3 habitaciones">3 habitaciones</option>
-                <option value="4 o más habitaciones">4 o más habitaciones</option>
+                <option value="" disabled selected id="optSelectPrompt">Selecciona una opción...</option>
+                <option value="1 habitación" id="opt1">1 habitación</option>
+                <option value="2 habitaciones" id="opt2">2 habitaciones</option>
+                <option value="3 habitaciones" id="opt3">3 habitaciones</option>
+                <option value="4 o más habitaciones" id="opt4">4 o más habitaciones</option>
               </select>
             </div>
           </div>
 
           <div class="form-group flex-1">
-            <label for="hotelInput">Hotel de Preferencia / zona de preferencia <span style="color: #dc2626;">*</span></label>
+            <label for="hotelInput" id="lblHotel">Hotel de Preferencia / zona de preferencia <span style="color: #dc2626;">*</span></label>
             <div class="input-icon-wrapper">
               <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               <input type="text" id="hotelInput" name="hotel" class="form-control" placeholder="Ej. Hotel St Isidro / Zona Reforma" required>
@@ -126,8 +136,8 @@
     <!-- Pantalla de Éxito al Enviar -->
     <div class="form-card status-card" id="successCard" style="display: none;">
       <div class="success-icon-wrapper">✓</div>
-      <h2 class="success-title">¡Registro Completado con Éxito!</h2>
-      <p class="success-desc">
+      <h2 class="success-title" id="txtSuccessTitle">¡Registro Completado con Éxito!</h2>
+      <p class="success-desc" id="txtSuccessDesc">
         Tus respuestas han sido recibidas y guardadas exitosamente en la hoja de control de <strong>Google Sheets</strong> de Indipris Travel.
       </p>
       <div class="reg-id-badge" id="confirmedId">ID: IND-XXXXXX</div>
