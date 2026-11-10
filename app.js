@@ -4,7 +4,7 @@
  */
 
 const STORAGE_KEY_WEBHOOK = 'indipris_atelier_sheets_webhook';
-const DEFAULT_WEBHOOK_URL = '';
+const DEFAULT_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzWzGXIBWfq9itjQjzJbTgXZxXUczKwAZZV1H8jCpeHTBLiO85UX6eFqp1sFseHpVo8Bw/exec';
 
 // Diccionario de Traducciones
 const TRANSLATIONS = {
@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
         await fetch(webhookUrl, {
           method: 'POST',
           mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify(payload)
         });
       } else {
