@@ -31,8 +31,8 @@ const TRANSLATIONS = {
     phHotel: "Ej. Hotel St Isidro / Zona Reforma",
     btnSubmit: "Enviar Respuestas",
     btnSending: "Enviando respuestas...",
-    successTitle: "¡Registro Completado con Éxito!",
-    successDesc: "Tus respuestas han sido recibidas y guardadas exitosamente en la hoja de control de Google Sheets de Indipris Travel.",
+    successTitle: "¡Registro exitoso!",
+    successDesc: "Tu registro se ha completado con éxito.",
     btnNew: "Registrar otra respuesta",
     footerCopyright: "© 2026 Indipris Travel. Todos los derechos reservados."
   },
@@ -59,8 +59,8 @@ const TRANSLATIONS = {
     phHotel: "e.g. Hotel St Isidro / Reforma Area",
     btnSubmit: "Submit Registration",
     btnSending: "Submitting answers...",
-    successTitle: "Registration Successfully Completed!",
-    successDesc: "Your details have been successfully received and recorded in Indipris Travel's management system.",
+    successTitle: "Registration Successful!",
+    successDesc: "Your registration has been completed successfully.",
     btnNew: "Submit another response",
     footerCopyright: "© 2026 Indipris Travel. All rights reserved."
   },
@@ -87,8 +87,8 @@ const TRANSLATIONS = {
     phHotel: "ex. Hotel St Isidro / Quartier Reforma",
     btnSubmit: "Envoyer l'inscription",
     btnSending: "Envoi en cours...",
-    successTitle: "Inscription enregistrée avec succès !",
-    successDesc: "Vos réponses ont bien été transmises et enregistrées auprès d'Indipris Travel.",
+    successTitle: "Enregistrement réussi !",
+    successDesc: "Votre enregistrement a été effectué avec succès.",
     btnNew: "Enregistrer une autre réponse",
     footerCopyright: "© 2026 Indipris Travel. Tous droits réservés."
   },
@@ -115,8 +115,8 @@ const TRANSLATIONS = {
     phHotel: "z.B. Hotel St Isidro / Zone Reforma",
     btnSubmit: "Antworten absenden",
     btnSending: "Wird gesendet...",
-    successTitle: "Anmeldung erfolgreich abgeschlossen!",
-    successDesc: "Ihre Angaben wurden erfolgreich erfasst und im Buchungssystem von Indipris Travel gespeichert.",
+    successTitle: "Erfolgreich registriert!",
+    successDesc: "Ihre Registrierung wurde erfolgreich abgeschlossen.",
     btnNew: "Weitere Antwort erfassen",
     footerCopyright: "© 2026 Indipris Travel. Alle Rechte vorbehalten."
   },
@@ -144,7 +144,7 @@ const TRANSLATIONS = {
     btnSubmit: "提交登记信息",
     btnSending: "正在提交...",
     successTitle: "登记成功！",
-    successDesc: "您的信息已成功提交并已记录至 Indipris Travel 系统。",
+    successDesc: "您的信息已成功登记。",
     btnNew: "登记另一条信息",
     footerCopyright: "© 2026 Indipris Travel. 版权所有。"
   }
