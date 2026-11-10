@@ -62,3 +62,4 @@ function doGet(e) {
     .createTextOutput(JSON.stringify({ "status": "online", "message": "Endpoint Google Apps Script activo para Encuestas Atelier Indipris" }))
     .setMimeType(ContentService.MimeType.JSON);
 }
+

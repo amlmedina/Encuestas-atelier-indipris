@@ -43,3 +43,4 @@ Para alojar el formulario gratis en GitHub:
 3. En **Source** selecciona `Deploy from a branch` y elige la rama `main` (carpeta `/root`).
 4. Haz clic en **Save** y tu formulario quedará disponible públicamente en una URL tipo:
    `https://tu-usuario.github.io/Encuestas-atelier-indipris/`
+
